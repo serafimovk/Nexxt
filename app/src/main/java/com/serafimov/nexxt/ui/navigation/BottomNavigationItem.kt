@@ -1,4 +1,4 @@
-package com.serafimov.nexxt.navigation
+package com.serafimov.nexxt.ui.navigation
 
 import androidx.compose.ui.graphics.vector.ImageVector
 

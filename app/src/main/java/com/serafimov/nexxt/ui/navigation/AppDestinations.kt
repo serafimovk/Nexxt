@@ -1,4 +1,4 @@
-package com.serafimov.nexxt.navigation
+package com.serafimov.nexxt.ui.navigation
 
 sealed class AppDestinations(val route: String) {
   object DiscoverScreen : AppDestinations(ROUTE_DISCOVER)

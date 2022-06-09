@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.compose.rememberNavController
 import com.serafimov.nexxt.R
-import com.serafimov.nexxt.navigation.AppNavigation
-import com.serafimov.nexxt.navigation.BottomNavigationBar
+import com.serafimov.nexxt.ui.navigation.AppNavigation
+import com.serafimov.nexxt.ui.navigation.BottomNavigationBar
 import com.serafimov.nexxt.ui.theme.NexxtTheme
 
 class MainActivity : ComponentActivity() {

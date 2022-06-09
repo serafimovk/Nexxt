@@ -1,4 +1,4 @@
-package com.serafimov.nexxt.ui.discover
+package com.serafimov.nexxt.ui.screens.discover
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

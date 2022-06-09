@@ -1,12 +1,12 @@
-package com.serafimov.nexxt.navigation
+package com.serafimov.nexxt.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.serafimov.nexxt.ui.discover.DiscoverScreen
-import com.serafimov.nexxt.ui.nextepisodes.NextEpisodesScreen
-import com.serafimov.nexxt.ui.settings.SettingsScreen
+import com.serafimov.nexxt.ui.screens.discover.DiscoverScreen
+import com.serafimov.nexxt.ui.screens.nextepisodes.NextEpisodesScreen
+import com.serafimov.nexxt.ui.screens.settings.SettingsScreen
 
 @Composable
 fun AppNavigation(navController: NavHostController) {
