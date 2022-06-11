@@ -4,20 +4,22 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.serafimov.nexxt.ui.theme.Dimens
 
 @Composable
 fun BottomNavigationBar(navController: NavHostController) {
 
-  BottomNavigation {
+  BottomNavigation(backgroundColor = MaterialTheme.colors.primary) {
+
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
 
@@ -37,13 +39,19 @@ fun BottomNavigationBar(navController: NavHostController) {
         icon = {
           Icon(
             imageVector = navItem.image,
+            tint = MaterialTheme.colors.onPrimary,
             contentDescription = tabTitle,
-            modifier = Modifier.padding(0.dp, 0.dp, 0.dp, 4.dp)
+            modifier = Modifier.padding(
+              Dimens.noSpacing,
+              Dimens.noSpacing,
+              Dimens.noSpacing,
+              Dimens.spacingSmall
+            )
           )
         },
         label = {
           Text(tabTitle)
-        },
+        }
       )
     }
 

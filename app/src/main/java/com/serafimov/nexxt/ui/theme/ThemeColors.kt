@@ -48,7 +48,7 @@ val Colors.textButton: Color
   get() = onPrimary
 
 val Colors.buttonPrimaryBackground: Color
-  get() = if (isLight) colorTeal700 else colorTeal900
+  get() = primaryVariant
 
 val Colors.buttonSecondaryBackground: Color
   get() = if (isLight) colorGrey500 else colorGrey800

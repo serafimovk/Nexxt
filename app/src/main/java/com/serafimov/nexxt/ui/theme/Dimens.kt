@@ -6,6 +6,7 @@ import androidx.compose.ui.unit.dp
 
 @Immutable
 object Dimens {
+  val noSpacing: Dp = 0.dp
   val spacingSmall: Dp = 4.dp
   val spacingMedium: Dp = 8.dp
   val spacingLarge: Dp = 16.dp
