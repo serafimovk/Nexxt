@@ -6,4 +6,6 @@
   <string name="tab_settings">Settings</string>
   <string name="button_notify_me">Notify me</string>
   <string name="button_stop_notifying">Stop notifying</string>
+  <string name="label_next_episode">Next episode: %1$s</string>
+  <string name="label_airs_in">Airs in: %1$s</string>
 </resources>

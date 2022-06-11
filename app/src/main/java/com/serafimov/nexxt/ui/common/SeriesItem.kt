@@ -34,8 +34,18 @@ fun SeriesItem(seriesUiModel: SeriesUiModel) {
       Column(modifier = Modifier.padding(Dimens.spacingLarge)) {
         TitleText(seriesUiModel.title)
         HorizontalSpacer(Dimens.spacingMedium)
-        BodyText(seriesUiModel.nextEpisode.orEmpty())
-        BodyText(seriesUiModel.airsIn.orEmpty())
+        BodyText(
+          stringResource(
+            id = R.string.label_next_episode,
+            seriesUiModel.nextEpisode.orEmpty()
+          )
+        )
+        BodyText(
+          stringResource(
+            id = R.string.label_airs_in,
+            seriesUiModel.airsIn.orEmpty()
+          )
+        )
         HorizontalSpacer(Dimens.spacingSmall)
         Button(
           onClick = { },

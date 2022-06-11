@@ -5,7 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.serafimov.nexxt.ui.screens.discover.DiscoverScreen
+import com.serafimov.nexxt.ui.screens.discover.DiscoverSeriesScreen
 import com.serafimov.nexxt.ui.screens.nextepisodes.NextEpisodesScreen
 import com.serafimov.nexxt.ui.screens.settings.SettingsScreen
 
@@ -18,8 +18,8 @@ fun AppNavigation(navController: NavHostController, modifier: Modifier) {
     modifier = modifier
   ) {
 
-    composable(AppDestinations.DiscoverScreen.route) {
-      DiscoverScreen()
+    composable(AppDestinations.DiscoverSeriesScreen.route) {
+      DiscoverSeriesScreen()
     }
 
     composable(AppDestinations.NextEpisodesScreen.route) {

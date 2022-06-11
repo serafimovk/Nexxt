@@ -1,11 +1,10 @@
 package com.serafimov.nexxt.ui.screens.nextepisodes
 
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.res.stringResource
-import com.serafimov.nexxt.R
+import com.serafimov.nexxt.data.mockNextEpisodesList
+import com.serafimov.nexxt.ui.common.SeriesList
 
 @Composable
 fun NextEpisodesScreen() {
-  Text(stringResource(R.string.tab_next_episodes))
+  SeriesList(seriesList = mockNextEpisodesList)
 }
