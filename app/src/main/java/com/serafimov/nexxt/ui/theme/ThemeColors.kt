@@ -52,3 +52,9 @@ val Colors.buttonPrimaryBackground: Color
 
 val Colors.buttonSecondaryBackground: Color
   get() = if (isLight) colorGrey500 else colorGrey800
+
+val Colors.tabItemSelected: Color
+  get() = colorWhite
+
+val Colors.tabItemUnselected: Color
+  get() = colorWhite.copy(alpha = 0.7f)

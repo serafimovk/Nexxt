@@ -14,6 +14,8 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.serafimov.nexxt.ui.theme.Dimens
+import com.serafimov.nexxt.ui.theme.tabItemSelected
+import com.serafimov.nexxt.ui.theme.tabItemUnselected
 
 @Composable
 fun BottomNavigationBar(navController: NavHostController) {
@@ -36,10 +38,11 @@ fun BottomNavigationBar(navController: NavHostController) {
             restoreState = true
           }
         },
+        selectedContentColor = MaterialTheme.colors.tabItemSelected,
+        unselectedContentColor = MaterialTheme.colors.tabItemUnselected,
         icon = {
           Icon(
             imageVector = navItem.image,
-            tint = MaterialTheme.colors.onPrimary,
             contentDescription = tabTitle,
             modifier = Modifier.padding(
               Dimens.noSpacing,

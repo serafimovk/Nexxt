@@ -10,7 +10,7 @@ val BottomNavigationItems = listOf(
   BottomNavigationItem(
     R.string.tab_discover,
     Icons.Filled.Search,
-    ROUTE_DISCOVER
+    ROUTE_DISCOVER_SERIES
   ),
   BottomNavigationItem(
     R.string.tab_next_episodes,

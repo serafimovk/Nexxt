@@ -1,10 +1,8 @@
 package com.serafimov.nexxt.ui.theme
 
-import androidx.compose.runtime.Immutable
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-@Immutable
 object Dimens {
   val noSpacing: Dp = 0.dp
   val spacingSmall: Dp = 4.dp
