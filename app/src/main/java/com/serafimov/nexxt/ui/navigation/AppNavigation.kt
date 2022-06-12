@@ -6,8 +6,12 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.serafimov.nexxt.ui.screens.discover.DiscoverSeriesScreen
+import com.serafimov.nexxt.ui.screens.discover.DiscoverSeriesViewModel
 import com.serafimov.nexxt.ui.screens.nextepisodes.NextEpisodesScreen
+import com.serafimov.nexxt.ui.screens.nextepisodes.NextEpisodesViewModel
 import com.serafimov.nexxt.ui.screens.settings.SettingsScreen
+import com.serafimov.nexxt.ui.screens.settings.SettingsViewModel
+import org.koin.androidx.compose.getViewModel
 
 @Composable
 fun AppNavigation(navController: NavHostController, modifier: Modifier) {
@@ -19,15 +23,18 @@ fun AppNavigation(navController: NavHostController, modifier: Modifier) {
   ) {
 
     composable(AppDestinations.DiscoverSeriesScreen.route) {
-      DiscoverSeriesScreen()
+      val viewModel = getViewModel<DiscoverSeriesViewModel>()
+      DiscoverSeriesScreen(viewModel)
     }
 
     composable(AppDestinations.NextEpisodesScreen.route) {
-      NextEpisodesScreen()
+      val viewModel = getViewModel<NextEpisodesViewModel>()
+      NextEpisodesScreen(viewModel)
     }
 
     composable(AppDestinations.SettingsScreen.route) {
-      SettingsScreen()
+      val viewModel = getViewModel<SettingsViewModel>()
+      SettingsScreen(viewModel)
     }
 
   }

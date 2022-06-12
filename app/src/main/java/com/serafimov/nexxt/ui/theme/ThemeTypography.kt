@@ -21,5 +21,10 @@ val themeTypography = Typography(
     fontFamily = FontFamily.Default,
     fontWeight = FontWeight.W500,
     fontSize = 14.sp
+  ),
+  subtitle1 = TextStyle(
+    fontWeight = FontWeight.Normal,
+    fontSize = 16.sp,
+    letterSpacing = 0.15.sp
   )
 )

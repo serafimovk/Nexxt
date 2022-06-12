@@ -11,7 +11,8 @@ object Dimens {
   val cornerSmall: Dp = 4.dp
   val cornerMedium: Dp = 8.dp
   val cornerLarge: Dp = 0.dp
-  val cardElevation: Dp = 4.dp
+  val appBarHeight: Dp = 56.dp
   val posterWidth: Dp = 132.dp
   val posterHeight: Dp = 176.dp
+  val cardElevation: Dp = 4.dp
 }
