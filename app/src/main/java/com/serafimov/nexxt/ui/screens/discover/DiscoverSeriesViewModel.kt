@@ -5,11 +5,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.serafimov.nexxt.data.mockDiscoverSeriesList
 import com.serafimov.nexxt.ui.screens.discover.appbar.SearchViewVisibility
-import com.serafimov.nexxt.ui.model.SeriesUiModel
+import com.serafimov.nexxt.data.model.SeriesModel
+import com.serafimov.nexxt.data.repository.DiscoverSeriesRepository
 
-class DiscoverSeriesViewModel : ViewModel() {
+class DiscoverSeriesViewModel(repository: DiscoverSeriesRepository) : ViewModel() {
 
   private val _searchViewVisibility = mutableStateOf(SearchViewVisibility.GONE)
   val searchViewVisibility: State<SearchViewVisibility> = _searchViewVisibility
@@ -17,11 +17,11 @@ class DiscoverSeriesViewModel : ViewModel() {
   private val _searchQuery = mutableStateOf("")
   val searchQuery: State<String> = _searchQuery
 
-  private val _seriesList = MutableLiveData<List<SeriesUiModel>>()
-  val seriesList: LiveData<List<SeriesUiModel>> = _seriesList
+  private val _seriesList = MutableLiveData<List<SeriesModel>>()
+  val seriesList: LiveData<List<SeriesModel>> = _seriesList
 
   init {
-    _seriesList.postValue(mockDiscoverSeriesList)
+    _seriesList.postValue(repository.getSeries())
   }
 
   fun updateSearchViewVisibility(newValue: SearchViewVisibility) {

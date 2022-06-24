@@ -1,6 +1,6 @@
-package com.serafimov.nexxt.ui.model
+package com.serafimov.nexxt.data.model
 
-data class SeriesUiModel(
+data class SeriesModel(
   val id: String,
   val title: String,
   val imageResource: Int,

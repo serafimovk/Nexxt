@@ -14,14 +14,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import com.serafimov.nexxt.R
-import com.serafimov.nexxt.ui.model.SeriesUiModel
+import com.serafimov.nexxt.data.model.SeriesModel
 import com.serafimov.nexxt.ui.theme.Dimens
 import com.serafimov.nexxt.ui.theme.buttonPrimaryBackground
 import com.serafimov.nexxt.ui.theme.buttonSecondaryBackground
 import com.serafimov.nexxt.ui.theme.textButton
 
 @Composable
-fun SeriesItem(seriesUiModel: SeriesUiModel) {
+fun SeriesItem(seriesUiModel: SeriesModel) {
   Card(
     modifier = Modifier
       .padding(Dimens.spacingMedium)

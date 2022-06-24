@@ -1,10 +1,10 @@
 package com.serafimov.nexxt.data
 
 import com.serafimov.nexxt.R
-import com.serafimov.nexxt.ui.model.SeriesUiModel
+import com.serafimov.nexxt.data.model.SeriesModel
 
-val mockDiscoverSeriesList = listOf(
-  SeriesUiModel(
+val seriesList = listOf(
+  SeriesModel(
     id = "1",
     title = "Obi-Wan Kenobi",
     imageResource = R.drawable.mock_poster_1,
@@ -12,7 +12,7 @@ val mockDiscoverSeriesList = listOf(
     airsIn = "5 days 13 hours",
     notifyMe = true
   ),
-  SeriesUiModel(
+  SeriesModel(
     id = "1",
     title = "Ms Marvel",
     imageResource = R.drawable.mock_poster_2,
@@ -20,7 +20,7 @@ val mockDiscoverSeriesList = listOf(
     airsIn = "2 days 5 hours",
     notifyMe = false
   ),
-  SeriesUiModel(
+  SeriesModel(
     id = "1",
     title = "The Boys",
     imageResource = R.drawable.mock_poster_3,
@@ -28,7 +28,7 @@ val mockDiscoverSeriesList = listOf(
     airsIn = "4 days 2 hours",
     notifyMe = false
   ),
-  SeriesUiModel(
+  SeriesModel(
     id = "1",
     title = "Peaky Blinders",
     imageResource = R.drawable.mock_poster_4,
@@ -36,7 +36,7 @@ val mockDiscoverSeriesList = listOf(
     airsIn = "19 hours",
     notifyMe = true
   ),
-  SeriesUiModel(
+  SeriesModel(
     id = "1",
     title = "Grey's Anatomy",
     imageResource = R.drawable.mock_poster_5,
@@ -45,5 +45,3 @@ val mockDiscoverSeriesList = listOf(
     notifyMe = false
   )
 )
-
-val mockNextEpisodesList = mockDiscoverSeriesList.filter { it.notifyMe }
